@@ -1,0 +1,44 @@
+workspace(name="hello-goku")
+
+load("@bazel_tools//tools/build_defs/repo:git.bzl","git_repository")
+
+git_repository(
+    name = "com_github_gflags_gflags",
+    commit = "986e8eed00ded8168ef4eaa6f925dc6be50b40fa",
+    remote ="https://github.com/gflags/gflags",
+)
+
+git_repository(
+    name = "glog",
+    commit = "9f0b7d3bfe1542848f784e8d1c545b916cec6b3e",
+    remote ="https://github.com/google/glog.git",
+)
+
+new_local_repository(
+    name = "myheaders",
+    path = "/usr/local/include",
+    build_file_content = "",
+)
+
+local_repository(
+  name = "usr_local",
+  path = "/usr/local/Cellar/folly/2022.01.10.00/include",
+)
+
+local_repository(
+  name = "usr_local1",
+  path = "/usr/local/Cellar/boost/1.76.0/include",
+)
+
+
+new_local_repository(
+    name = "myfolly",
+    path = "/usr/local/include",
+    build_file_content = """
+package(default_visibility = ["//visibility:public"])
+cc_library(
+    name = "headers",
+    hdrs = glob(["**/*.h","**/*.hpp"])
+)
+"""
+)

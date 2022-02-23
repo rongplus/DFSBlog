@@ -15,16 +15,29 @@ git_repository(
 )
 
 
+new_local_repository(
+    name = "boost_libs",
+    # pkg-config --variable=libdir x11
+    path = "/home/ronghuang/work-local/boost/lib",
+    build_file_content = """
+cc_library(
+    name = "boost",
+    srcs = glob(["*.a"]),
+    visibility = ["//visibility:public"],
+)
+""",
+)
 
 
 new_local_repository(
-    name = "myfolly",
-    path = "D:/3rdLib/include",
+    name = "boost",
+    path = "/home/ronghuang/work-local/boost/include",
     build_file_content = """
 package(default_visibility = ["//visibility:public"])
 cc_library(
     name = "headers",
-    hdrs = glob(["**/*.h","**/*.hpp"])
+    hdrs = glob(["**/*.h","**/*.hpp","**/*.ipp"])
 )
+
 """
 )

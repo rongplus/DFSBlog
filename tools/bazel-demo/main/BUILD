@@ -2,56 +2,42 @@
 
 load("@rules_cc//cc:defs.bzl", "cc_library")
 
-filegroup(
-    name = "srcs",
-    srcs = glob([
-        "*.cpp",
-        "*.h",
-    ]),
-)
-
 
 cc_library(
-    name = "hello-lib",
-    srcs = glob([ "*.cpp"]),
-    hdrs = glob([ "*.h"]),
+    name="hello-lib",
+    srcs=glob(["*.cpp"]),
+    hdrs=glob(["*.h"]),
 
-    deps = [
+    deps=[
         "@com_github_gflags_gflags//:gflags",
         "@glog",
-        "@myfolly//:headers",
-       
-     
+         #"@boost//:headers",
+         "@boost_libs//:boost",
+         "@boost//:headers",
     ],
-    includes = [
+    includes=[
         ".",
     ],
 
-    #linkopts=["-pthread"],
+    linkopts=["-pthread"],
 
- 
-     copts = [
+
+    copts=[
         "-DPINTEREST_INTERNAL",
         "-DBOOST_LOG_DYN_LINK",
-        "-Iexternal/usr/local/include",
-        "-Iexternal/usr/local/Cellar/folly/2022.01.10.00/include",
-         "-Iexternal/myfolly",
-     ],
-     visibility = ["//main:__pkg__"],
+        # "-Iexternal/home/ronghuang/work-local/boost/include/",
+        #  "-Iexternal/usr/local/Cellar/folly/2022.01.10.00/include",
+         "-Iexternal/boost",
+    ],
+    visibility=["//main:__pkg__"],
 )
 
 cc_binary(
-    name = "hello-goku",
-    srcs = ["goku_s.cpp"],
-    deps = [
+    name="hello-bazel",
+    srcs=["goku_s.cpp"],
+    deps=[
+     
         ":hello-lib",
     ],
-)
-
-
-cc_import(
-  name = "folly",
-  
-  static_library = "libfollylib.lib",
-  shared_library = "libfollylib.so",
+    linkopts=["-pthread"],
 )

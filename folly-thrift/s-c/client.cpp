@@ -4,11 +4,16 @@
 // g++ Server.cpp gen-cpp/test_types.cpp -lthrift  -std=c++14 -o test
 // -L/Users/ronghuang/work/3rd_lib/boost/lib -lboost_log_setup -lboost_log
 //-lpthread -lboost_log-mt -lboost_thread-mt -lboost_system-mt
-//otool -L exefile
-//install_name_tool -change @executable_path/libboost_something.dylib /opt/local/lib/libboost_something.dylib exefile
-//g++ boost_log.cpp  -L/Users/ronghuang/work/3rd_lib/boost_1_76_0/stage/lib -lboost_log_setup-mt -lboost_log-mt -lboost_thread-mt -lboost_system-mt -DBOOST_LOG_DYN_LINK -o blog//
+// otool -L exefile
+// install_name_tool -change @executable_path/libboost_something.dylib
+// /opt/local/lib/libboost_something.dylib exefile
+//
+// g++ boost_log.cpp  -L/Users/ronghuang/work/3rd_lib/boost_1_76_0/stage/lib
+// -lboost_log_setup-mt -lboost_log-mt -lboost_thread-mt -lboost_system-mt
+// -DBOOST_LOG_DYN_LINK -o blog//
 
-//g++ Server.cpp gen-cpp/test_types.cpp -lthrift  -std=c++14 -o test  -L/Users/ronghuang/work/3rd_lib/boost/lib -lboost_log_setup -lboost_log
+// g++ Server.cpp gen-cpp/test_types.cpp -lthrift  -std=c++14 -o test
+// -L/Users/ronghuang/work/3rd_lib/boost/lib -lboost_log_setup -lboost_log
 
 #include "gen-cpp/test_types.h"
 #include <thrift/protocol/TBinaryProtocol.h>

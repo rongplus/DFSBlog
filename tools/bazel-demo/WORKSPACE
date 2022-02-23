@@ -14,26 +14,12 @@ git_repository(
     remote ="https://github.com/google/glog.git",
 )
 
-new_local_repository(
-    name = "myheaders",
-    path = "/usr/local/include",
-    build_file_content = "",
-)
 
-local_repository(
-  name = "usr_local",
-  path = "/usr/local/Cellar/folly/2022.01.10.00/include",
-)
-
-local_repository(
-  name = "usr_local1",
-  path = "/usr/local/Cellar/boost/1.76.0/include",
-)
 
 
 new_local_repository(
     name = "myfolly",
-    path = "/usr/local/include",
+    path = "D:/3rdLib/include",
     build_file_content = """
 package(default_visibility = ["//visibility:public"])
 cc_library(

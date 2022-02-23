@@ -9,18 +9,7 @@ filegroup(
         "*.h",
     ]),
 )
-cc_library(
-  name = "myfolly",
-  hdrs = glob(["include/**"]),
-  srcs = [
-    "lib64/folly.so",
-  ],
-  includes = [
-    "folly",
-    "boost",
-  ],
-  visibility = ["//visibility:public"],
-)
+
 
 cc_library(
     name = "hello-lib",
@@ -38,7 +27,7 @@ cc_library(
         ".",
     ],
 
-    linkopts=["-pthread"],
+    #linkopts=["-pthread"],
 
  
      copts = [
@@ -63,6 +52,6 @@ cc_binary(
 cc_import(
   name = "folly",
   
-  static_library = "libfollylib.a",
+  static_library = "libfollylib.lib",
   shared_library = "libfollylib.so",
 )

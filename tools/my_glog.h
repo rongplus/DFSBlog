@@ -1,1 +1,0 @@
-void glog_test();

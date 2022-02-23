@@ -1,3 +1,0 @@
-
-
-void folly_test();

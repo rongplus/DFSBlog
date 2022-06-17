@@ -1,0 +1,8 @@
+/nologo
+/OUT:bazel-out/x64_windows-fastbuild/bin/main/hello-lib.lib
+/MACHINE:X64
+bazel-out/x64_windows-fastbuild/bin/main/_objs/hello-lib/goku_s.obj
+bazel-out/x64_windows-fastbuild/bin/main/_objs/hello-lib/my_folly.obj
+bazel-out/x64_windows-fastbuild/bin/main/_objs/hello-lib/my_glog.obj
+bazel-out/x64_windows-fastbuild/bin/main/_objs/hello-lib/my_stl_threadpool.obj
+/ignore:4221

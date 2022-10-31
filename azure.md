@@ -1,0 +1,1 @@
+ssh -i C:\Users\huang\Downloads\ubuntu-spark_key.pem azureuser@20.55.61.115

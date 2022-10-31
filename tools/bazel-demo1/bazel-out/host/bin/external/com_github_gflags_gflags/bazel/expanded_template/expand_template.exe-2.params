@@ -1,8 +1,0 @@
-/nologo
-/OUT:bazel-out/host/bin/external/com_github_gflags_gflags/bazel/expanded_template/expand_template.exe
-bazel-out/host/bin/external/com_github_gflags_gflags/bazel/expanded_template/_objs/expand_template/expand_template.obj
-/SUBSYSTEM:CONSOLE
-/MACHINE:X64
-/DEFAULTLIB:msvcrt.lib
-/OPT:ICF
-/OPT:REF

@@ -1,3 +1,0 @@
-LINK : warning LNK4044: unrecognized option '/pthread'; ignored
-LINK : warning LNK4044: unrecognized option '/pthread'; ignored
-   Creating library bazel-out\x64_windows-fastbuild\bin\main\hello-bazel.lib and object bazel-out\x64_windows-fastbuild\bin\main\hello-bazel.exp

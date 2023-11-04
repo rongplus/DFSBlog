@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app.kubernetes.io/name: load-balancer-web
+  name: hello-web
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: load-balancer-web
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: load-balancer-web
+    spec:
+      containers:
+      - image: kubeguide/tomcat-app:v1
+        name: hello-web
+        ports:
+        - containerPort: 8080
+        env:
+        - name: MYSQL_SERVICE_HOST
+          value: 'mysql'
+        - name: MYSQL_SERVICE_PORT
+          value: '3306'

@@ -40,3 +40,33 @@ http://dcaoyuan.github.io/papers/pdfs/Scalability.pdf
 https://github.com/ty4z2008/Qix/blob/master/ds.md
 
 http://static.googleusercontent.com/media/research.google.com/es//archive/spanner-osdi2012.pdf
+
+machine learning lib
+https://algotrading101.com/learn/sklearn-guide/
+https://octave.org/download#ms-windows
+https://www.tfcertification.com/pages/machine-learning-practical
+https://gist.github.com/ratmcu/9595272028b996a71b91f6d92221fccf
+
+https://en.wikipedia.org/wiki/Page_(computer_memory)
+https://github.com/mikexcohen/Statistics_course/tree/main/Python/dataJourney
+
+Spark Streaming 源码解析系列
+https://github.com/lw-lin/CoolplaySpark/blob/master/Spark%20Streaming%20%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90%E7%B3%BB%E5%88%97/3.1%20Receiver%20%E5%88%86%E5%8F%91%E8%AF%A6%E8%A7%A3.md
+
+
+
+https://www.tfcertification.com/pages/machine-learning-practical
+
+https://docs.google.com/spreadsheets/d/1Z50QdGtz2ThjCidE5bzr0Lv0EkmGckaVGj3kglXfUYw/edit?pli=1#gid=119576526
+
+spark
+https://github.com/apache/spark/blob/master/examples/src/main/scala/org/apache/spark/examples/AccumulatorMetricsTest.scala
+
+https://github.com/lw-lin/CoolplaySpark/blob/master/Spark%20Streaming%20%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90%E7%B3%BB%E5%88%97/3.1%20Receiver%20%E5%88%86%E5%8F%91%E8%AF%A6%E8%A7%A3.md
+
+
+https://www.geeksforgeeks.org/mouse-keyboard-automation-using-python/
+
+
+-2147483648
+2147483647

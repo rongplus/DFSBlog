@@ -21,3 +21,9 @@ minikube service myweb --url
  - kubectl get pods -o wide
  - kubectl expose deployment hello-web --type=LoadBalancer --name=helloweb-service
  - minikube tunnel
+
+
+---------------------------考证版------------------------------
+minikube start --driver=virtualbox --kubernetes-version=v1.27.4 --no-vtx-check
+VMware
+minikube start --driver=vmware
